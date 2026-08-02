@@ -6,7 +6,7 @@ export function ProjectDetailsPage() {
     return (
         <>
             <h1>Project page</h1>
-            <p>Contains details about the project: {slug}</p>
+            <p>Contains details about the selected project: {slug}</p>
         </>
     )
 }

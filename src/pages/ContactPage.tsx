@@ -2,7 +2,7 @@ export function ContactPage() {
     return (
         <>
             <h1>Contacts page</h1>
-            <p>Contacts are provided here.</p>
+            <p>Contacts (email, socials, etc.) are provided here.</p>
         </>
     )
 }
