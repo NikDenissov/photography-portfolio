@@ -1,9 +1,8 @@
-function ProjectsPage() {
+export function ProjectsPage() {
     return (
         <>
-            <h1>The list of projects.</h1>
+            <h1>Projects page</h1>
+            <p>Displays a list of projects.</p>
         </>
     )
 }
-
-export default ProjectsPage;
