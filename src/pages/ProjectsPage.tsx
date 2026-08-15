@@ -1,7 +1,7 @@
 export function ProjectsPage() {
     return (
         <>
-            <h1>Projects page</h1>
+            <h2>Projects page</h2>
             <p>Displays a list of all projects in a grid.</p>
         </>
     )

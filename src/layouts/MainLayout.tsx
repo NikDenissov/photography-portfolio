@@ -1,12 +1,14 @@
+import "../styles/global.css";
+import "./MainLayout.css";
 import { Outlet } from "react-router-dom";
 import { Navbar } from "../components/Navbar";
 
 export function MainLayout() {
     return (
-        <div>
+        <div className="layout">
             <Navbar />
 
-            <main>
+            <main className="main">
                 <Outlet />
             </main>
 

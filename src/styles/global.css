@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    font-family: "EB Garamond", serif;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+a :visited{
+    text-decoration: none;
+}

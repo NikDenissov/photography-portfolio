@@ -7,7 +7,7 @@ This project powers a real-world photography website and is intentionally design
 ### Simple
 
 #### Favicon
-Replace an *.svg file located at src/assets/favicon.example.svg with your own image.
+Replace the src/assets/favicon.example.svg file with your own image.
 
 ### Detailed
 
