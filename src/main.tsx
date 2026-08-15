@@ -12,3 +12,8 @@ createRoot(document.getElementById('root')!).render(
       />
   </StrictMode>,
 );
+
+// Setup favicon image
+const svgAssets = import.meta.glob('./assets/*.svg', { eager: true, query: "?url", import: "default" });
+const faviconHref = svgAssets[`./assets/${import.meta.env.VITE_FAVICON}`];
+document.querySelector<HTMLLinkElement>('link[rel="icon"]')!.href = faviconHref;
