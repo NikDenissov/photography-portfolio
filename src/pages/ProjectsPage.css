@@ -1,0 +1,35 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--spacing-medium);
+}
+
+.project-card {
+    align-content: center;
+}
+
+.projects-grid img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    display: block;
+}
+
+.projects-grid p {
+    height: auto;
+    text-align: center;
+    margin-top: var(--spacing-xsmall);
+}
+
+/* Responsive configs */
+@media (min-width: 512px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1280px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

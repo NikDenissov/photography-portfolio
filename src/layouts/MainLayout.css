@@ -1,5 +1,8 @@
 .layout {
+    width: 90%;
+    max-width: 1536px;
     min-height: 100vh;
+    justify-self: center;
     display: flex;
     flex-direction: column;
     font-size: medium;
@@ -7,4 +10,22 @@
 
 .main {
     flex: 1;
+}
+
+footer {
+    margin-top: var(--spacing-medium);
+    margin-bottom: var(--spacing-small);
+}
+
+/* Responsive configs */
+@media (min-width: 512px) {
+    .layout {
+        width: 85%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .layout {
+        width: 80%;
+    }
 }
