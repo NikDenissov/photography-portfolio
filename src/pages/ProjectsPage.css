@@ -8,17 +8,18 @@
     align-content: center;
 }
 
-.projects-grid img {
+.project-card img {
     width: 100%;
     height: 90%;
     object-fit: contain;
     display: block;
 }
 
-.projects-grid p {
+.project-card p {
     height: auto;
     text-align: center;
     margin-top: var(--spacing-xsmall);
+    font-size: medium;
 }
 
 /* Responsive configs */
