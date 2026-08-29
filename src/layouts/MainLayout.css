@@ -2,7 +2,7 @@
     width: 90%;
     max-width: 1536px;
     min-height: 100vh;
-    justify-self: center;
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
 }
