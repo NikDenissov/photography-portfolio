@@ -1,22 +1,45 @@
-import {Link} from "react-router-dom";
 import "./ProjectsPage.css";
+import { ProjectCard } from "../components/ProjectCard.tsx";
 
-// Example photos
+// Mock data
 const photos = import.meta.glob("../assets/photos/*.{jpg,jpeg,png,webp,JPG}",
     {eager: true, query: "?url", import: "default",});
+const photoHrefs = Object.values(photos);
+
+const projects = [
+    {
+        slug: "countryside-home",
+        title: "Countryside Home",
+        coverImage: photoHrefs[0]
+    },
+    {
+        slug: "urban-flat",
+        title: "Urban Flat",
+        coverImage: photoHrefs[1]
+    },
+    {
+        slug: "modern-interior",
+        title: "Modern Interior",
+        coverImage: photoHrefs[2]
+    },
+    {
+        slug: "estate",
+        title: "The Estate",
+        coverImage: photoHrefs[3]
+    },
+    {
+        slug: "modern-house",
+        title: "Modern House",
+        coverImage: photoHrefs[4]
+    }
+];
 
 export function ProjectsPage() {
-    const photoHrefs = Object.values(photos);
-    const projectName = "countryside-home";
-    
     return (
         <div className = "projects-grid">
             {
-                photoHrefs.map((photoHref) => (
-                    <Link to={`/projects/${projectName}`} className = "project-card" key={photoHref}>
-                        <img src={photoHref} alt=""/>
-                        <p>Project Name</p>
-                    </Link>
+                projects.map((project) => (
+                    <ProjectCard key={`project-card-${project.slug}`} project={project} />
                 ))
             }
         </div>
