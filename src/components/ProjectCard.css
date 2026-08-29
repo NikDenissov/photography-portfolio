@@ -1,0 +1,17 @@
+.project-card {
+    align-content: center;
+}
+
+.project-card img {
+    width: 100%;
+    height: 90%;
+    object-fit: contain;
+    display: block;
+}
+
+.project-card p {
+    height: auto;
+    text-align: center;
+    margin-top: var(--spacing-xsmall);
+    font-size: medium;
+}
