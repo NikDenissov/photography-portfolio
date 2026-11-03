@@ -27,7 +27,7 @@ export async function getProjects() {
             ? supabase.storage
                 .from("photos")
                 .getPublicUrl(cover.image_url).data.publicUrl
-            : null;
+            : "";
 
         return {
             id: project.id,
